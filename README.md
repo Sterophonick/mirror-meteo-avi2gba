@@ -1,0 +1,5 @@
+# mirror-meteo-avi2gba
+An English translated copy of Meteo AVI-2-GBA 1.4.0
+
+# Disclaimer
+## I DID NOT MAKE THIS SOFTWARE. ALL RIGHTS BELONG TO INSIDE-CAP. THIS IS MERELY FOR REFERENCE, PRESERVATION, AND SHITPOSTING.
