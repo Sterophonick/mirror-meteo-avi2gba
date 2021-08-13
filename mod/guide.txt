@@ -1,0 +1,19 @@
+Hi, I would like to suggest a modification that can be done to the Meteo application that disables the minimum resolution limit and the maximum file limit.
+Note that this will result in most roms not being able to be fit in a normal GBA cart, but these can be fit in a flash cart.
+
+How to modify:
+1. Download x64dbg (https://x64dbg.com)
+2. Go through the setup and choose x32dbg.
+3. Drag and drop the original Meteo140EN.exe into x32dbg, and then press F9.
+4. Click on "Find Strings" (the button that has a capital A and a lowercase z). This will redirect you to the "References" tab, where you can see all the strings.
+5. Double click on the "ROM is bigger than 32MB(256Mbit)" string.
+6. Double click on the jbe right above the string and chance the jbe to jmp. Click OK.
+7. Go back to the References tab and click on the "Resolution is too small." string.
+8. Above that, there should be a je, double click on that and cahnge it to a jmp.
+9. Now we are done patching. Go to File > Patch File and in the "Patches" menu, click "Patch File". Save the file wherever, just try to save it as an exe file!
+10. After saving, you should be able to run the application without any limits.
+
+Included in this pull request is a *.1337 patch file usable in x32dbg, which allows you to quickly modify the application without needing to do the above.
+Just open x32dbg, drag and drop the exe file into it, and open up the "Patches" within File > Patch File menu, then click Import. Browse to where you downloaded the patch file, then open it. Then all you would need to do at that point is click on "Patch File", and save the file to wherever.
+
+
